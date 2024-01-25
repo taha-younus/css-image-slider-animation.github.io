@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        } */
+        body{
+            display: grid;
+            place-items: center;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,170,255,1) 38%, rgba(2,0,36,1) 100%);;
+        }
+        .container{
+           height: 350px;
+           margin: auto;
+           position: relative;
+           width: 90%;
+           display: grid;
+           place-items: center;
+           overflow: hidden;
+        }
+
+        .slide-container{
+            display: flex;
+            width: calc(25px * 18);
+            animation: scroll 20s linear infinite alternate;
+            transition: all .5s;
+        }
+
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+            }
+
+            100%{
+                transform: translateX(calc(-250px * 9));
+                transition: all .5s;
+            }
+            
+        }
+
+        .slide-image{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+            
+        }
+
+        img{
+            width: 250px;
+            height: 150px;
+            transition: transform .8s;
+        }
+
+        img:hover{
+            transform: translateZ(20px);
+        }
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide-container">
+            <div class="slide-image">
+                <img src="image1.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image2.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image3.jpg"  alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image1.webp"  alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image2.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image1.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image2.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image3.jpg" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image1.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image2.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image3.jpg" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image1.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image2.webp" alt="">
+            </div>
+
+            <div class="slide-image">
+                <img src="image3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
